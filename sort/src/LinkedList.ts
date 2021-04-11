@@ -1,9 +1,19 @@
+import {Sorter} from './Sorter';
+
+
 class Node{
     next: Node | null = null;
     constructor(public data: number){}
 }
 
-export class LinkedList{
+export class LinkedList extends Sorter{
+
+    //if the child doesn't have a constructor - then you don't need a constructor
+
+    // constructor(){
+    //     super();
+    // }
+
     head: Node | null=null; 
     //head start off empty
 
